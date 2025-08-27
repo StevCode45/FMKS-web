@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Model Of Knowledge School (FMKS) - Islamic Excellence in Education</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero-bg {
+            background: linear-gradient(135deg, #1e40af 0%, #ec4899 100%);
+        }
+        .section-padding {
+            padding: 4rem 1rem;
+        }
+        @media (max-width: 768px) {
+            .section-padding {
+                padding: 2rem 1rem;
+            }
+        }
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+        .mobile-menu {
+            transform: translateX(-100%);
+            transition: transform 0.3s ease-in-out;
+        }
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 smooth-scroll">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-gradient-to-br from-blue-600 to-pink-500 rounded-full flex items-center justify-center">
+                        <i class="fas fa-mosque text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold bg-gradient-to-r from-blue-600 to-pink-500 bg-clip-text text-transparent">FMKS</h1>
+                        <p class="text-xs text-gray-600">Islamic Excellence in Education</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600 transition duration-300">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 transition duration-300">About Us</a>
+                    <a href="#admissions" class="text-gray-700 hover:text-blue-600 transition duration-300">Admissions</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 transition duration-300">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-gray-700" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="mobile-menu md:hidden fixed top-0 left-0 w-64 h-full bg-white shadow-lg z-40">
+            <div class="p-6">
+                <button onclick="toggleMobileMenu()" class="mb-6 text-gray-700">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+                <div class="space-y-4">
+                    <a href="#home" onclick="toggleMobileMenu()" class="block text-gray-700 hover:text-blue-600 py-2">Home</a>
+                    <a href="#about" onclick="toggleMobileMenu()" class="block text-gray-700 hover:text-blue-600 py-2">About Us</a>
+                    <a href="#admissions" onclick="toggleMobileMenu()" class="block text-gray-700 hover:text-blue-600 py-2">Admissions</a>
+                    <a href="#contact" onclick="toggleMobileMenu()" class="block text-gray-700 hover:text-blue-600 py-2">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Homepage -->
+    <section id="home" class="hero-bg text-white min-h-screen flex items-center pt-20">
+        <div class="max-w-6xl mx-auto px-4 py-16">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="mb-6">
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-mosque text-blue-600 text-3xl"></i>
+                        </div>
+                        <h1 class="text-4xl md:text-6xl font-bold mb-4">Future Model Of Knowledge School</h1>
+                        <p class="text-xl md:text-2xl mb-6 text-pink-100">"Islamic Excellence in Education"</p>
+                    </div>
+                    <p class="text-lg mb-8 leading-relaxed">
+                        Welcome to Future Model Of Knowledge School (FMKS), where we provide quality Islamic education 
+                        integrated with modern academic excellence. Our unique curriculum combines traditional Islamic 
+                        knowledge with contemporary learning, preparing students for success in both this world and the 
+                        hereafter. We are committed to nurturing well-rounded Muslim scholars and leaders.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#admissions" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-pink-50 transition duration-300 text-center">
+                            Apply Now
+                        </a>
+                        <a href="#about" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:bg-gradient-to-r hover:from-blue-600 hover:to-pink-500 hover:bg-clip-text hover:text-transparent transition duration-300 text-center">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <!-- Hero Image - Islamic School -->
+                    <div class="bg-white bg-opacity-20 rounded-lg p-8 backdrop-blur-sm">
+                        <svg class="w-full h-64 mx-auto" viewBox="0 0 400 300" fill="none">
+                            <rect width="400" height="300" fill="url(#heroGradient)" rx="10"/>
+                            <defs>
+                                <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.3"/>
+                                    <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.1"/>
+                                </linearGradient>
+                            </defs>
+                            <!-- Islamic School Building with Dome -->
+                            <rect x="50" y="150" width="300" height="120" fill="#ffffff" opacity="0.9"/>
+                            <!-- Main Dome -->
+                            <ellipse cx="200" cy="150" rx="40" ry="25" fill="#ec4899" opacity="0.8"/>
+                            <!-- Crescent -->
+                            <path d="M 195 130 Q 200 125 205 130 Q 200 135 195 130" fill="#fbbf24"/>
+                            <!-- Windows -->
+                            <rect x="70" y="170" width="30" height="50" fill="#3b82f6"/>
+                            <rect x="120" y="170" width="30" height="50" fill="#3b82f6"/>
+                            <rect x="250" y="170" width="30" height="50" fill="#3b82f6"/>
+                            <rect x="300" y="170" width="30" height="50" fill="#3b82f6"/>
+                            <!-- Students in Islamic dress -->
+                            <circle cx="120" cy="240" r="8" fill="#fbbf24"/>
+                            <rect x="116" y="235" width="8" height="15" fill="#ec4899" opacity="0.7"/>
+                            <circle cx="150" cy="240" r="8" fill="#fbbf24"/>
+                            <rect x="146" y="235" width="8" height="15" fill="#3b82f6" opacity="0.7"/>
+                            <circle cx="180" cy="240" r="8" fill="#fbbf24"/>
+                            <rect x="176" y="235" width="8" height="15" fill="#ec4899" opacity="0.7"/>
+                            <text x="200" y="100" fill="#ffffff" font-size="20" font-weight="bold" text-anchor="middle">🕌 Islamic Excellence</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="section-padding bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">About Future Model Of Knowledge School</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Established with a vision to provide Islamic education excellence, we have been nurturing Muslim scholars and leaders for over a decade.
+                </p>
+            </div>
+
+            <!-- School Compound Image -->
+            <div class="mb-16">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold text-center bg-gradient-to-r from-blue-600 to-pink-500 bg-clip-text text-transparent mb-6">Our Beautiful Campus</h3>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- School Compound SVG -->
+                        <div class="bg-gradient-to-br from-blue-50 to-pink-50 p-6 rounded-lg">
+                            <svg viewBox="0 0 400 250" class="w-full h-48">
+                                <!-- Sky -->
+                                <rect width="400" height="250" fill="url(#skyGradient)"/>
+                                <defs>
+                                    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#87CEEB"/>
+                                        <stop offset="100%" style="stop-color:#E0F6FF"/>
+                                    </linearGradient>
+                                </defs>
+                                <!-- Main Building -->
+                                <rect x="50" y="120" width="300" height="100" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+                                <!-- Islamic Dome -->
+                                <ellipse cx="200" cy="120" rx="50" ry="30" fill="#ec4899"/>
+                                <!-- Crescent on dome -->
+                                <path d="M 190 95 Q 200 85 210 95 Q 200 105 190 95" fill="#fbbf24"/>
+                                <!-- Minarets -->
+                                <rect x="80" y="80" width="15" height="60" fill="#3b82f6"/>
+                                <rect x="305" y="80" width="15" height="60" fill="#3b82f6"/>
+                                <ellipse cx="87.5" cy="80" rx="10" ry="8" fill="#ec4899"/>
+                                <ellipse cx="312.5" cy="80" rx="10" ry="8" fill="#ec4899"/>
+                                <!-- Windows -->
+                                <rect x="70" y="140" width="25" height="40" fill="#3b82f6" opacity="0.7"/>
+                                <rect x="110" y="140" width="25" height="40" fill="#3b82f6" opacity="0.7"/>
+                                <rect x="265" y="140" width="25" height="40" fill="#3b82f6" opacity="0.7"/>
+                                <rect x="305" y="140" width="25" height="40" fill="#3b82f6" opacity="0.7"/>
+                                <!-- Main Entrance -->
+                                <rect x="180" y="150" width="40" height="70" fill="#1e40af"/>
+                                <path d="M 180 150 Q 200 140 220 150 L 220 220 L 180 220 Z" fill="#1e40af"/>
+                                <!-- Students -->
+                                <circle cx="130" cy="200" r="6" fill="#fbbf24"/>
+                                <rect x="127" y="195" width="6" height="12" fill="#ec4899"/>
+                                <circle cx="160" cy="200" r="6" fill="#fbbf24"/>
+                                <rect x="157" y="195" width="6" height="12" fill="#3b82f6"/>
+                                <circle cx="240" cy="200" r="6" fill="#fbbf24"/>
+                                <rect x="237" y="195" width="6" height="12" fill="#ec4899"/>
+                                <circle cx="270" cy="200" r="6" fill="#fbbf24"/>
+                                <rect x="267" y="195" width="6" height="12" fill="#3b82f6"/>
+                                <!-- Trees -->
+                                <circle cx="30" cy="180" r="20" fill="#22c55e"/>
+                                <rect x="27" y="180" width="6" height="25" fill="#92400e"/>
+                                <circle cx="370" cy="180" r="20" fill="#22c55e"/>
+                                <rect x="367" y="180" width="6" height="25" fill="#92400e"/>
+                                <!-- Ground -->
+                                <rect x="0" y="205" width="400" height="45" fill="#86efac"/>
+                            </svg>
+                        </div>
+                        <!-- Students in Classroom SVG -->
+                        <div class="bg-gradient-to-br from-pink-50 to-blue-50 p-6 rounded-lg">
+                            <svg viewBox="0 0 400 250" class="w-full h-48">
+                                <!-- Classroom Background -->
+                                <rect width="400" height="250" fill="#f1f5f9"/>
+                                <!-- Blackboard -->
+                                <rect x="20" y="40" width="150" height="80" fill="#1e293b"/>
+                                <!-- Arabic Text on Board -->
+                                <text x="95" y="70" fill="#ffffff" font-size="16" text-anchor="middle">بِسْمِ اللهِ</text>
+                                <text x="95" y="90" fill="#ffffff" font-size="12" text-anchor="middle">الرَّحْمٰنِ الرَّحِيْمِ</text>
+                                <!-- Teacher -->
+                                <circle cx="95" cy="140" r="12" fill="#fbbf24"/>
+                                <rect x="88" y="130" width="14" height="25" fill="#ec4899"/>
+                                <!-- Students at desks -->
+                                <rect x="200" y="160" width="40" height="20" fill="#8b5cf6"/>
+                                <circle cx="210" cy="150" r="8" fill="#fbbf24"/>
+                                <rect x="206" y="145" width="8" height="15" fill="#3b82f6"/>
+                                <circle cx="230" cy="150" r="8" fill="#fbbf24"/>
+                                <rect x="226" y="145" width="8" height="15" fill="#ec4899"/>
+                                
+                                <rect x="260" y="160" width="40" height="20" fill="#8b5cf6"/>
+                                <circle cx="270" cy="150" r="8" fill="#fbbf24"/>
+                                <rect x="266" y="145" width="8" height="15" fill="#3b82f6"/>
+                                <circle cx="290" cy="150" r="8" fill="#fbbf24"/>
+                                <rect x="286" y="145" width="8" height="15" fill="#ec4899"/>
+                                
+                                <rect x="320" y="160" width="40" height="20" fill="#8b5cf6"/>
+                                <circle cx="330" cy="150" r="8" fill="#fbbf24"/>
+                                <rect x="326" y="145" width="8" height="15" fill="#3b82f6"/>
+                                <circle cx="350" cy="150" r="8" fill="#fbbf24"/>
+                                <rect x="346" y="145" width="8" height="15" fill="#ec4899"/>
+                                
+                                <!-- Books on desks -->
+                                <rect x="205" y="155" width="8" height="2" fill="#22c55e"/>
+                                <rect x="265" y="155" width="8" height="2" fill="#f59e0b"/>
+                                <rect x="325" y="155" width="8" height="2" fill="#ef4444"/>
+                                
+                                <!-- Window -->
+                                <rect x="320" y="50" width="60" height="60" fill="#87ceeb" stroke="#64748b" stroke-width="2"/>
+                                <line x1="350" y1="50" x2="350" y2="110" stroke="#64748b" stroke-width="1"/>
+                                <line x1="320" y1="80" x2="380" y2="80" stroke="#64748b" stroke-width="1"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <div>
+                    <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-pink-500 bg-clip-text text-transparent mb-6">Our History</h3>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        Founded in 2010, Future Model Of Knowledge School (FMKS) began with a vision to integrate Islamic 
+                        education with modern academic excellence. Starting with 80 students, we have grown into a 
+                        comprehensive Islamic educational institution serving over 800 students from nursery through secondary school.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Our journey has been blessed with consistent achievements in both Islamic studies and conventional 
+                        subjects. Our students excel in WAEC, NECO, and JAMB examinations while maintaining strong Islamic 
+                        values and knowledge of Quran, Hadith, and Arabic language.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-star-and-crescent text-4xl text-pink-500 mb-4"></i>
+                        <h4 class="text-xl font-bold text-gray-800">Our Achievements</h4>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>95% WAEC pass rate</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Best Islamic School in Lagos 2023</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>National Quran Recitation Champions</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>80+ students memorized full Quran</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Excellence in Arabic Language Award</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Vision -->
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-100 to-pink-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-eye text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Our Vision</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        To be the leading Islamic educational institution in Nigeria, producing globally competitive 
+                        Muslim graduates who excel academically while maintaining strong Islamic values and character.
+                    </p>
+                </div>
+
+                <!-- Mission -->
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-100 to-pink-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-mosque text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Our Mission</h3>
+                    <p class="text-gray-600 leading-relaxed">
+    To provide quality Islamic education that integrates Quranic teachings, modern academics, 
+                        and character development, nurturing well-rounded Muslims prepared for both worldly success and the hereafter.
+                    </p>
+                </div>
+                <!-- Curriculum -->
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-100 to-pink-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-quran text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Our Curriculum</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        We integrate the Nigerian National Curriculum with comprehensive Islamic studies including 
+                        Quran memorization, Arabic language, Islamic history, and Hadith studies alongside modern subjects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Admissions -->
+    <section id="admissions" class="section-padding bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Admissions</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Join our community of learners and begin your journey to academic excellence.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Admission Requirements -->
+                <div>
+                    <h3 class="text-2xl font-bold text-blue-600 mb-6">Admission Requirements</h3>
+                    
+                    <div class="mb-8">
+                        <h4 class="text-lg font-semibold text-gray-800 mb-4">Primary School (Nursery - Primary 6)</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mr-3 mt-1"></i>Birth certificate</li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mr-3 mt-1"></i>Immunization record</li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mr-3 mt-1"></i>Passport photographs (4 copies)</li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mr-3 mt-1"></i>Previous school report (if applicable)</li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mr-3 mt-1"></i>Entrance assessment for Primary 2 and above</li>
+                            </ul>
+                    </div>
+
+                    <div class="mb-8">
+                        <h4 class="text-lg font-semibold text-gray-800 mb-4">Secondary School (JSS 1 - SS 3)</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mr-3 mt-1"></i>Primary School Leaving Certificate</li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mr-3 mt-1"></i>Birth certificate</li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mr-3 mt-1"></i>Passport photographs (6 copies)</li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mr-3 mt-1"></i>Previous school testimonial</li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mr-3 mt-1"></i>Entrance examination (English, Mathematics, Basic Science)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Admission Process -->
+                <div>
+                    <h3 class="text-2xl font-bold text-blue-600 mb-6">Admission Process</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center mr-4 mt-1 text-sm font-bold">1</div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-2">Application Form</h4>
+                                <p class="text-gray-600">Complete and submit the admission form with required documents.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center mr-4 mt-1 text-sm font-bold">2</div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-2">Entrance Assessment</h4>
+                                <p class="text-gray-600">Take the entrance examination or assessment (age-appropriate).</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center mr-4 mt-1 text-sm font-bold">3</div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-2">Interview</h4>
+                                <p class="text-gray-600">Parent and student interview with the admissions committee.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center mr-4 mt-1 text-sm font-bold">4</div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-2">Admission Decision</h4>
+                                <p class="text-gray-600">Receive admission decision within 2 weeks of assessment.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center mr-4 mt-1 text-sm font-bold">5</div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-2">Enrollment</h4>
+                                <p class="text-gray-600">Complete enrollment by paying fees and submitting final documents.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 p-6 bg-blue-50 rounded-lg">
+                        <h4 class="font-semibold text-blue-800 mb-3">Important Dates</h4>
+                        <ul class="text-blue-700 space-y-1">
+                            <li><strong>Application Opens:</strong> January 15th</li>
+                            <li><strong>Application Deadline:</strong> March 30th</li>
+                            <li><strong>Entrance Exams:</strong> April 15th - 30th</li>
+                            <li><strong>Admission Results:</strong> May 15th</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Ready to Apply?</h3>
+                    <p class="text-gray-600 mb-6">Contact our admissions office for more information or to schedule a school tour.</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="#contact" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">
+                            Contact Admissions
+                        </a>
+                        <a href="tel:+2348012345678" class="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition duration-300">
+                            Call Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section-padding bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Contact Us</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Get in touch with us for admissions, inquiries, or to schedule a visit to our campus.
+                    </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Information -->
+                <div>
+                    <h3 class="text-2xl font-bold text-blue-600 mb-8">Get In Touch</h3>
+                    
+                    <div class="space-y-6">
+                        <!-- Address -->
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-map-marker-alt text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-2">Address</h4>
+                                <p class="text-gray-600">
+                                    15 Education Avenue, Victoria Island<br>
+                                    Lagos State, Nigeria
+                                    </p>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-phone text-green-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-2">Phone</h4>
+                                <p class="text-gray-600">
+                                    <a href="tel:+2348012345678" class="hover:text-blue-600">+234 801 234 5678</a><br>
+                                    <a href="tel:+2347098765432" class="hover:text-blue-600">+234 709 876 5432</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-2">Email</h4>
+                                <p class="text-gray-600">
+                                    <a href="mailto:info@fmks.edu.ng" class="hover:text-blue-600">info@fmks.edu.ng</a><br>
+                                    <a href="mailto:admissions@fmks.edu.ng" class="hover:text-blue-600">admissions@fmks.edu.ng</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- WhatsApp -->
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fab fa-whatsapp text-green-600"></i>
+                                <i class="fab fa-whatsapp text-green-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-2">WhatsApp</h4>
+                                <a href="https://wa.me/2348012345678" target="_blank" class="inline-flex items-center bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition duration-300">
+                                    <i class="fab fa-whatsapp mr-2"></i>
+                                    Chat with us
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map -->
+                    <div class="mt-8">
+                        <h4 class="font-semibold text-gray-800 mb-4">Location</h4>
+                        <div class="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
+                            <div class="text-center text-gray-600">
+                                <i class="fas fa-map-marked-alt text-4xl mb-4"></i>
+                                <p class="font-semibold">Interactive Map</p>
+                                <p class="text-sm">15 Education Avenue, Victoria Island, Lagos</p>
+                                <a href="https://maps.google.com/?q=15+Education+Avenue+Victoria+Island+Lagos" target="_blank" class="inline-block mt-2 text-blue-600 hover:text-blue-800">
+                                    View on Google Maps
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div>
+                    <h3 class="text-2xl font-bold text-blue-600 mb-8">Send us a Message</h3>
+                    <form class="bg-white p-8 rounded-lg shadow-lg" onsubmit="handleFormSubmit(event)">
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="firstName" class="block text-gray-700 font-semibold mb-2">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 transition duration-300">
+                                </div>
+                            <div>
+                                <label for="lastName" class="block text-gray-700 font-semibold mb-2">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 transition duration-300">
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-semibold mb-2">Email Address *</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 transition duration-300">
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="phone" class="block text-gray-700 font-semibold mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 transition duration-300">
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="subject" class="block text-gray-700 font-semibold mb-2">Subject *</label>
+                            <select id="subject" name="subject" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 transition duration-300">
+                                <option value="">Select a subject</option>
+                                <option value="admissions">Admissions Inquiry</option>
+                                <option value="general">General Information</option>
+                                <option value="academic">Academic Programs</option>
+                                <option value="fees">Fees and Payment</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-semibold mb-2">Message *</label>
+                            <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 transition duration-300" placeholder="Please tell us how we can help you..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">
+                            <i class="fas fa-paper-plane mr-2"></i>
+                            Send Message
+                        </button>
+
+                        <p class="text-sm text-gray-600 mt-4 text-center">
+                            * Required fields. We'll respond within 24 hours.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- School Info -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-600 to-pink-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-mosque text-white text-xl"></i>
+                            </div>
+                        <div>
+                            <h3 class="text-xl font-bold">Future Model Of Knowledge School</h3>
+                            <p class="text-gray-400">Islamic Excellence in Education</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Nurturing Islamic excellence and building tomorrow's Muslim leaders through quality Islamic education, 
+                        character development, and innovative learning approaches that integrate faith with knowledge.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-500 transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-pink-600 rounded-full flex items-center justify-center hover:bg-pink-700 transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center hover:bg-blue-900 transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-300 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="#admissions" class="text-gray-300 hover:text-white transition duration-300">Admissions</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-white transition duration-300">Contact</a></li>
+                        </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Contact Info</h4>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-3"></i>
+                            <span class="text-sm">15 Education Avenue, Victoria Island, Lagos</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-3"></i>
+                            <span class="text-sm">+234 801 234 5678</span>
+                            </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3"></i>
+                            <span class="text-sm">info@fmks.edu.ng</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-400">
+                    &copy; 2024 Future Model Of Knowledge School (FMKS). All rights reserved. | 
+                    <span class="text-gray-500">Designed with Islamic excellence in mind</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('active');
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission handler
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            // Get form data
+            const formData = new FormData(event.target);
+            const firstName = formData.get('firstName');
+            const lastName = formData.get('lastName');
+            const email = formData.get('email');
+            const subject = formData.get('subject');
+            
+            // Show success message
+            alert(`Thank you, ${firstName} ${lastName}! Your message about "${subject}" has been received. We'll respond to ${email} within 24 hours.`);
+            // Reset form
+            event.target.reset();
+        }
+
+        // Add active navigation highlighting
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('nav a[href^="#"]');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-blue-600');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('text-blue-600');
+                }
+            });
+        });
+// Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const menuButton = event.target.closest('button');
+            
+            if (!mobileMenu.contains(event.target) && !menuButton) {
+                mobileMenu.classList.remove('active');
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97580cc5e256c8bb',t:'MTc1NjI2MDgwOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else
+    if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
